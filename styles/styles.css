@@ -34,17 +34,48 @@
   --color-grey: #747272;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-brand-dark);
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
+  background-color: var(--color-white);
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
 }
 ul {
   list-style-type: none;
 }
 a {
   text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 48px 0;
 }
 
 .header-link {
@@ -56,6 +87,7 @@ a {
 }
 
 .hero-title {
+  margin-bottom: 40px;
   font-family: "Play", sans-serif;
   font-weight: 700;
   font-size: 140px;
